@@ -9,6 +9,7 @@ while (!finished) {
     println "What would you like to do?";
     println "   1 - Exchange pounds into euro";
     println "   2 - Exchange euro into pounds";
+    println "   3 - Just give me money";
     println "   0 - Exit the program";
     println "";
     print   "> ";
@@ -25,6 +26,10 @@ while (!finished) {
 	  double euro   = Double.parseDouble(System.console().readLine());
 	  double pounds = euro * poundOverEuroRatio;
 	  println euro + "€ will give you £" + pounds;
+	  break;
+    case 3: 
+	  print "How many would you like ";
+	  println "No";
 	  break;
     case 0: 
 	  finished = true;
